@@ -1,0 +1,172 @@
+body {
+			font-family: arial;
+			font-size: 12px;
+			background: linear-gradient(15deg,#FFF, #FFFAFA); /*Efeito gradiente*/
+			text-align: justify;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #363636;
+}
+div #top{
+	width:20%;
+	height:5%;
+	background-color:linear-gradient(15deg,gold, blue);
+	border-spacing: 0px;
+
+	
+} 
+
+div#menu a{
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+	color: #4F4F4F;
+}
+div#slide{
+	display: table;
+	border-collapse: separate;
+	border-spacing: 0px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#CD0000;
+	width:100%;
+	height:55%;
+	text-align: center;
+	background-position:fixed;
+
+}
+
+/*Estilo do slide-show*/
+<style>
+* {margin: 0; padding: 0;}
+body {background: linear-gradient(15deg,#FFF, #FFFAFA);}
+a,img {border: none;}
+
+	.trs {-webkit-transition:all ease-out 0.5s;
+    -moz-transition:all ease-out 0.5s;
+    -o-transition:all ease-out 0.5s;
+    -ms-transition:all ease-out 0.5s;
+    transition:all ease-out 0.5s;}
+	
+#slider {position: relative; z-index: 1;}
+#slider a { position: absolute; top: 0; left: 0; opacity: 0;filter:alpha(opacity=0);}
+.ativo {opacity: 1!important; filter:alpha(opacity=100)!important;}
+ 
+/*controladores*/
+span {background: #000; cursor: pointer; opacity: 0;filter:alpha(opacity=0); position: absolute; bottom: 40%; width: 43px; height: 43px; z-index: 5;}
+.next {right: 10px;}
+.next:before,.next:after {left: 21px;}
+.next:before {
+    -webkit-transform: rotate(-42deg);
+    top: 5px;
+}
+.next:after {
+    -webkit-transform: rotate(-132deg);
+    top: 19px;
+}
+.next:before,.next:after,.prev:before,.prev:after {content: "";
+    height: 20px;
+    background: #fff;
+    width: 1px;
+    position: absolute;
+}
+.prev {left: 10px;}
+.prev:before,.prev:after {left: 18px;}
+.prev:before {
+    -webkit-transform: rotate(42deg);
+    top: 5px;
+}
+.prev:after {
+    -webkit-transform: rotate(132deg);
+    top: 19px;
+}
+ 
+figure:hover span {opacity: 0.76;filter:alpha(opacity=76);}
+    figure {
+    max-width: 937px;
+    height: 354px;
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+}
+ 
+figcaption {padding-left: 20px;color: #fff; font-family: "Kaushan Script","Lato","arial"; font-size: 22px; background: rgba(1, 144, 238, 0.76); width: 100%; position: absolute; bottom: 0; left: 0; line-height: 55px; height: 55px; z-index: 5}
+
+
+</style>
+
+
+div#sile{
+	display: table;
+	border-collapse: separate;
+	border-spacing: 0px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	width:100%;
+	height:25%;
+	text-align: center;
+	background-position:fixed;
+
+}
+
+/* Configuração das imagens que ampliam na seção SALE */
+img {
+  max-width: 100%;
+  display: block;
+}
+.sile{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 240px;
+  -webkit-transform: translate(-50%, -50%);
+  /* Safari e Chrome */
+  -moz-transform: translate(-50%, -50%);
+  /* Firefox */
+  -ms-transform: translate(-50%, -50%);
+  /* IE 9 */
+  -o-transform: translate(-50%, -50%);
+  /* Opera */
+  transform: translate(-50%, -50%);
+}
+/*.image {
+  width: 100%;
+  height: 100%;
+}*/
+.image img {
+  -webkit-transition: all 1s ease;
+  /* Safari e Chrome */
+  -moz-transition: all 1s ease;
+  /* Firefox */
+  -o-transition: all 1s ease;
+  /* IE 9 */
+  -ms-transition: all 1s ease;
+  /* Opera */
+  transition: all 1s ease;
+  
+}
+.image:hover img {
+  -webkit-transform: scale(1.25);
+  /* Safari e Chrome */
+  -moz-transform: scale(1.25);
+  /* Firefox */
+  -ms-transform: scale(1.25);
+  /* IE 9 */
+  -o-transform: scale(1.25);
+  /* Opera */
+  transform: scale(1.25);
+}
+
+div#sile a{
+	margin-left: 50%;
+	margin-right: 50%;
+	text-align: center;
+	color: #4F4F4F;
+	font-family: chaucer;
+	font-size: 32px;
+}
